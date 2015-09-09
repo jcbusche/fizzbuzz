@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Blank</title>
+    <title>FizzBuzz</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,10 +23,15 @@
 
 <body>
 
+
 <div class="container">
 
-    <h1>Hello World!</h1>
-    <p class="lead">This is something!</p>
+    <h1>FizzBuzz</h1>
+    <form name="form1" onsubmit="fizz()">
+        Please provide a number: <input type="text" name="num"><br>
+        <input type="button"  value="Fizz" onclick="fizz()">
+    </form>
+    <p id="output"></p>
 
 </div><!-- /.container -->
 
@@ -36,5 +41,6 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/fizzbuzz.js"></script>
 </body>
 </html>
